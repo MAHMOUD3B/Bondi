@@ -1,0 +1,42 @@
+// import variables file
+@use "../helpers/variables" as *;
+
+/* styling footer section */
+footer {
+    .info {
+        .copyright {
+            >span {
+                color: $blue;
+            }
+
+            div {
+                span {
+                    color: $yellow;
+                }
+            }
+        }
+    }
+
+    .social {
+        a {
+            width: 40px;
+            height: 40px;
+
+            &:nth-child(1) {
+                background-color: #1877f2;
+            }
+
+            &:nth-child(2) {
+                background-color: #1da1f2;
+            }
+
+            &:nth-child(3) {
+                background-color: #0a66c2;
+            }
+
+            &:nth-child(4) {
+                background-color: #ff0000;
+            }
+        }
+    }
+}

@@ -1,0 +1,26 @@
+// import variables file
+@use "../helpers/variables" as *;
+
+/* Styling features section */
+.feat {
+    .icons {
+        height: 140px;
+
+        .number {
+            font: {
+                size: 120px;
+                weight: bold;
+            }
+
+            color: $light;
+        }
+
+        .icon {
+            color: $blue;
+        }
+    }
+
+    h4 {
+        color: $yellow;
+    }
+}

@@ -1,0 +1,85 @@
+// import variables file
+@use "../helpers/variables" as *;
+
+/* styling gallary section */
+.gallary {
+    background-color: $light;
+
+    ul {
+        li {
+            transition: 0.4s;
+            -webkit-transition: 0.4s;
+            -moz-transition: 0.4s;
+            -ms-transition: 0.4s;
+            -o-transition: 0.4s;
+
+            &:hover {
+                color: $yellow;
+            }
+        }
+
+        .active {
+            color: $yellow;
+
+            &:hover {
+                color: white;
+            }
+        }
+    }
+
+    .box {
+        overflow: hidden;
+        background-color: white;
+
+        &::before {
+            content: "Application";
+            width: 100%;
+            height: 100%;
+            position: absolute;
+            left: 0;
+            top: 0;
+            background-color: $light;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-size: 24px;
+            font-weight: bold;
+            color: $yellow;
+            transition: 0.5s;
+            transform: translateX(calc(-100% - 5px));
+            z-index: 2;
+            -webkit-transition: 0.5s;
+            -moz-transition: 0.5s;
+            -ms-transition: 0.5s;
+            -o-transition: 0.5s;
+            -webkit-transform: translateX(calc(-100% - 5px));
+            -moz-transform: translateX(calc(-100% - 5px));
+            -ms-transform: translateX(calc(-100% - 5px));
+            -o-transform: translateX(calc(-100% - 5px));
+        }
+
+        &:hover::before {
+            transform: translateX(0);
+            -webkit-transform: translateX(0);
+            -moz-transform: translateX(0);
+            -ms-transform: translateX(0);
+            -o-transform: translateX(0);
+        }
+
+        img {
+            transition: 0.5s;
+            -webkit-transition: 0.5s;
+            -moz-transition: 0.5s;
+            -ms-transition: 0.5s;
+            -o-transition: 0.5s;
+        }
+
+        &:hover img {
+            transform: scale(1.1);
+            -webkit-transform: scale(1.1);
+            -moz-transform: scale(1.1);
+            -ms-transform: scale(1.1);
+            -o-transform: scale(1.1);
+        }
+    }
+}

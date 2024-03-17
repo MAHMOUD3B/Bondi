@@ -1,0 +1,11 @@
+// import variables file
+@use "../helpers/variables" as *;
+
+/* styling subscribe section */
+.subscribe {
+    background-color: $yellow;
+
+    input[type="email"]::placeholder {
+        color: white;
+    }
+}

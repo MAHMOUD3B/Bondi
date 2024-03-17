@@ -1,0 +1,19 @@
+// import helpers files
+@use "./helpers/variables" as *;
+@use "./helpers/mixins" as *;
+@use "./helpers/globals" as *;
+
+// import header file
+@use "./layout/header";
+// import landing file
+@use "./pages/landing";
+// import features file
+@use "./pages/features";
+// import gallary file
+@use "./pages/gallary";
+// import stuff & team file
+@use "./pages/stuff-team";
+// import subscribe file
+@use "./pages/subscribe";
+// import footer file
+@use "./layout/footer";

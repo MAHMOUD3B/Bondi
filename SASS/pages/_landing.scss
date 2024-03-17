@@ -1,0 +1,7 @@
+// import varilables file
+@use "../helpers/variables" as *;
+
+/* Styling landing section */
+.landing {
+    height: calc(100vh - 88px);
+}

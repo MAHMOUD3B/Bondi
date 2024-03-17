@@ -1,0 +1,41 @@
+// import variables file
+@use "./variables" as *;
+
+/* Styling global items */
+body {
+    font-family: "Roboto", sans-serif;
+}
+
+.logo {
+    width: 50px;
+    height: 50px;
+}
+
+.main-title {
+    &::after {
+        content: "";
+        position: absolute;
+        width: 140px;
+        height: 2px;
+        background-color: $blue;
+        left: 50%;
+        transform: translateX(-50%);
+        -webkit-transform: translateX(-50%);
+        -moz-transform: translateX(-50%);
+        -ms-transform: translateX(-50%);
+        -o-transform: translateX(-50%);
+    }
+
+    svg {
+        color: $yellow;
+    }
+}
+
+.btn,
+.rounded-pill {
+    color: $yellow;
+
+    &:hover {
+        color: white;
+    }
+}

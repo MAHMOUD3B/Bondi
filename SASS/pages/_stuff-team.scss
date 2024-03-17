@@ -1,0 +1,24 @@
+// import variables file
+@use "../helpers/variables" as *;
+
+/* styling stuf section */
+.stuf {
+    .image {
+        width: 90%;
+    }
+}
+
+/* styling team section */
+.team {
+    background-color: $light;
+
+    h2 {
+        color: $yellow;
+    }
+
+    .box {
+        h4 {
+            background-color: $blue;
+        }
+    }
+}

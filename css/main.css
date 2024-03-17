@@ -1,0 +1,241 @@
+/* Styling global items */
+body {
+  font-family: "Roboto", sans-serif;
+}
+
+.logo {
+  width: 50px;
+  height: 50px;
+}
+
+.main-title::after {
+  content: "";
+  position: absolute;
+  width: 140px;
+  height: 2px;
+  background-color: rgb(9, 201, 197);
+  left: 50%;
+  transform: translateX(-50%);
+  -webkit-transform: translateX(-50%);
+  -moz-transform: translateX(-50%);
+  -ms-transform: translateX(-50%);
+  -o-transform: translateX(-50%);
+}
+
+.main-title svg {
+  color: rgb(238, 208, 57);
+}
+
+.btn,
+.rounded-pill {
+  color: rgb(238, 208, 57);
+}
+
+.btn:hover,
+.rounded-pill:hover {
+  color: white;
+}
+
+/* styling header section */
+.navbar .nav-link {
+  color: rgb(216, 216, 216);
+  transition: 0.3s;
+  -webkit-transition: 0.3s;
+  -moz-transition: 0.3s;
+  -ms-transition: 0.3s;
+  -o-transition: 0.3s;
+}
+
+.navbar .nav-link.active,
+.navbar .nav-link:hover {
+  color: rgb(9, 201, 197);
+}
+
+.search {
+  color: rgb(9, 201, 197);
+  border-left: 1px solid;
+}
+
+/* Styling landing section */
+.landing {
+  height: calc(100vh - 88px);
+}
+
+/* Styling features section */
+.feat .icons {
+  height: 140px;
+}
+
+.feat .icons .number {
+  font-size: 120px;
+  font-weight: bold;
+  color: rgba(175, 214, 227, 0.374);
+}
+
+.feat .icons .icon {
+  color: rgb(9, 201, 197);
+}
+
+.feat h4 {
+  color: rgb(238, 208, 57);
+}
+
+/* styling gallary section */
+.gallary {
+  background-color: rgba(175, 214, 227, 0.374);
+}
+
+.gallary ul li {
+  transition: 0.4s;
+  -webkit-transition: 0.4s;
+  -moz-transition: 0.4s;
+  -ms-transition: 0.4s;
+  -o-transition: 0.4s;
+}
+
+.gallary ul li:hover {
+  color: rgb(238, 208, 57);
+}
+
+.gallary ul .active {
+  color: rgb(238, 208, 57);
+}
+
+.gallary ul .active:hover {
+  color: white;
+}
+
+.gallary .box {
+  overflow: hidden;
+  background-color: white;
+}
+
+.gallary .box::before {
+  content: "Application";
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  left: 0;
+  top: 0;
+  background-color: rgba(175, 214, 227, 0.374);
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  font-size: 24px;
+  font-weight: bold;
+  color: rgb(238, 208, 57);
+  transition: 0.5s;
+  transform: translateX(calc(-100% - 5px));
+  z-index: 2;
+  -webkit-transition: 0.5s;
+  -moz-transition: 0.5s;
+  -ms-transition: 0.5s;
+  -o-transition: 0.5s;
+  -webkit-transform: translateX(calc(-100% - 5px));
+  -moz-transform: translateX(calc(-100% - 5px));
+  -ms-transform: translateX(calc(-100% - 5px));
+  -o-transform: translateX(calc(-100% - 5px));
+}
+
+.gallary .box:hover::before {
+  transform: translateX(0);
+  -webkit-transform: translateX(0);
+  -moz-transform: translateX(0);
+  -ms-transform: translateX(0);
+  -o-transform: translateX(0);
+}
+
+.gallary .box img {
+  transition: 0.5s;
+  -webkit-transition: 0.5s;
+  -moz-transition: 0.5s;
+  -ms-transition: 0.5s;
+  -o-transition: 0.5s;
+}
+
+.gallary .box:hover img {
+  transform: scale(1.1);
+  -webkit-transform: scale(1.1);
+  -moz-transform: scale(1.1);
+  -ms-transform: scale(1.1);
+  -o-transform: scale(1.1);
+}
+
+/* styling stuf section */
+.stuf .image {
+  width: 90%;
+}
+
+/* styling team section */
+.team {
+  background-color: rgba(175, 214, 227, 0.374);
+}
+
+.team h2 {
+  color: rgb(238, 208, 57);
+}
+
+.team .box h4 {
+  background-color: rgb(9, 201, 197);
+}
+
+/* styling subscribe section */
+.subscribe {
+  background-color: rgb(238, 208, 57);
+}
+
+.subscribe input[type=email]::-webkit-input-placeholder {
+  color: white;
+}
+
+.subscribe input[type=email]::-moz-placeholder {
+  color: white;
+}
+
+.subscribe input[type=email]:-ms-input-placeholder {
+  color: white;
+}
+
+.subscribe input[type=email]::-ms-input-placeholder {
+  color: white;
+}
+
+.subscribe input[type=email]::placeholder {
+  color: white;
+}
+
+/* styling footer section */
+footer .info .copyright > span {
+  color: rgb(9, 201, 197);
+}
+
+footer .info .copyright div span {
+  color: rgb(238, 208, 57);
+}
+
+footer .social a {
+  width: 40px;
+  height: 40px;
+}
+
+footer .social a:nth-child(1) {
+  background-color: #1877f2;
+}
+
+footer .social a:nth-child(2) {
+  background-color: #1da1f2;
+}
+
+footer .social a:nth-child(3) {
+  background-color: #0a66c2;
+}
+
+footer .social a:nth-child(4) {
+  background-color: #ff0000;
+}
